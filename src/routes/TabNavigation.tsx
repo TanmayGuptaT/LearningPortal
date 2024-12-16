@@ -17,17 +17,16 @@ const TabNavigation=()=>{
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
-          // Set the icon based on the route name
           if (route.name === "Dashboard") {
-            iconName = "dashboard"; // Icon name for Dashboard
+            iconName = "dashboard";
           } else if (route.name === "Profile") {
-            iconName = "person"; // Icon name for Profile
+            iconName = "person"
           }
 
           return <MaterialIcons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: "orange", // Active tab color
-        tabBarInactiveTintColor: "gray", // Inactive tab color
+        tabBarActiveTintColor: "orange",
+        tabBarInactiveTintColor: "gray",
       })}>
         <Tab.Screen name="Dashboard" component={Dashboard} />
         <Tab.Screen name="Profile" component={Profile} />
