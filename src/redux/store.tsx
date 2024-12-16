@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
-// import {thunk} from 'redux-thunk';
 export type AppDispatch = typeof store.dispatch;
 
 import AsyncStorage from "@react-native-async-storage/async-storage";

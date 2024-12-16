@@ -13,7 +13,7 @@ const Notes=()=>{
     console.log('route ',route)
 
     const categories = ["Javascript", "Typescript", "Java", "Python", "kotlin"];
-  const selectedCategory = categories[route?.params?.index]; // Select the category based on the index
+  const selectedCategory = categories[route?.params?.index];
 
   const filteredData = NotesData.filter((note) => note.title === selectedCategory);
 
@@ -29,7 +29,6 @@ const Notes=()=>{
                 <TextComponent title={item.sentence} fontSize={16} color={'grey'} />
                 </View>
             )
-            {/* <TextComponent title={route?.params?.index===0?item?.title==='Javascript'&&item.sentence:route?.params?.index===1?item?.title==='Typescript'&&item.sentence:route?.params?.index===2?item?.title==='Java'&&item.sentence:route?.params?.index===3?item?.title==='Python'&&item.sentence:item?.title==='Kotlin'&&item.sentence} fontSize={16} color={'grey'} /> */}
         }}
         />
         </View>

@@ -6,7 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import Slider from "@react-native-community/slider"
 import { video1, video2, video3, video4 } from "../../../utils/videos"
 
-const VideoPlayComponent=({index})=>{
+const VideoPlayComponent=({index}:any)=>{
 
     const [click,setClick]=useState(false)
     const [pause,setPause]=useState(false)

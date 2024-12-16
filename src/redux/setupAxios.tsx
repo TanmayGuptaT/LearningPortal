@@ -8,7 +8,6 @@ import {
 } from "@reduxjs/toolkit";
 import { AxiosStatic } from "axios";
 import { PersistPartial } from "redux-persist/es/persistReducer";
-import { defaultLogout } from "../modules/auth/redux/authSlice";
 
 const setupAxios = (
   axios: AxiosStatic,
@@ -44,8 +43,6 @@ const setupAxios = (
     },
     (err: { response: { status: number } }) => {
       if (err.response && err.response.status === 401) {
-        // Alert.alert("Unauthorized", "You have been logged out.");
-        // store.dispatch(defaultLogout());
       }
       return Promise.reject(err);
     }

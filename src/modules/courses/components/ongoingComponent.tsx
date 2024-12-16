@@ -1,11 +1,10 @@
 import { TouchableOpacity, View } from "react-native"
 import { ImageComponent, MyCourcesDetails, TextComponent } from "../../../components/common"
 import { windowHeight, windowWidth } from "../../../utils/utils"
-import { ELearning } from "../../../utils/images"
 import { CourseTiming } from "../../../data/data"
 import { colors } from "../../../utils/colors"
 
-const OngoingComponent=({image,title,progress,time,marginRight,onPress}:any)=>{
+const OngoingComponent=({image,title,progress,time,onPress}:any)=>{
     return(
      <TouchableOpacity onPress={onPress} style={{width:windowWidth*0.9,flexDirection:'row',borderWidth:1,borderColor:'#d7d7d7',padding:windowWidth*0.02,borderRadius:10,marginVertical:windowHeight*0.01}} >
         <ImageComponent heightComponent={windowHeight*0.15} dimentionImage={windowHeight*0.15} margin={0} align={'start'} widthComponent={windowHeight*0.15} image={image} borderRadius={20} />

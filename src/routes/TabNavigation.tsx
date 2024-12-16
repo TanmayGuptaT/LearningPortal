@@ -15,7 +15,7 @@ const TabNavigation=()=>{
       <Tab.Navigator screenOptions={({ route }) => ({
         headerShown: false,
         tabBarIcon: ({ color, size }) => {
-          let iconName;
+          let iconName:any;
 
           if (route.name === "Dashboard") {
             iconName = "dashboard";

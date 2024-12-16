@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity, View } from "react-native"
+import { TouchableOpacity, View } from "react-native"
 import { ImageComponent, TextComponent } from "../../../components/common"
 import { windowHeight, windowWidth } from "../../../utils/utils"
 
